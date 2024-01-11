@@ -13,6 +13,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <!-- Auto Update Copyright Year in Footer -->
+  <script>
+    // when the DOM is ready
+    document.addEventListener("DOMContentLoaded", function () {
+      // get the the span element
+      const yrSpan = document.querySelector('.copyright-year');
+      // get the current year
+      const currentYr = new Date().getFullYear();
+      // set the year span element's text to the current year
+      yrSpan.textContent = currentYr;
+    });
+  </script>
+
 </head>
 <body>
     <div class="scroll-up-btn">
